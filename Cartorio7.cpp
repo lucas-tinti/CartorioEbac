@@ -131,6 +131,7 @@ int main () //os parentesis indicam que é uma função
 		printf("\t1 - Registrar nomes\n");
 		printf("\t2 - Consultar nomes\n"); //o \t dá um certo espaço do início da linha	
 		printf("\t3 - Deletar nomes\n"); 
+		printf("\t4 - Sair do sistema\n");
 		printf("Opção: ");//tanto faz usar um só ou vários printf. Aqui é o fim do menu
 
 		scanf("%d", &opcao); // scanf vai escanear o que a pessoa escreveu e, nesse caso, armazenar escolha do usuário na variavel opcao através do %d
@@ -151,6 +152,12 @@ int main () //os parentesis indicam que é uma função
 			case 3:
 			deletar();
 			break;
+			
+			case 4:
+			printf("Obrigado por utilizar o sistema!\n");
+			return 0;//retorna valor sero, ou seja, quebra o laço e ele sai do sistema
+			break;
+			
 			
 			default:
 			printf("Essa opção não está disponível!\n");
